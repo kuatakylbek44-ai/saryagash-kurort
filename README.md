@@ -12,6 +12,23 @@ python -m http.server 4173 --bind 127.0.0.1 --directory dist
 
 Браузерде `http://127.0.0.1:4173` ашыңыз. Құрастыру қадамы мен npm тәуелділіктері қажет емес.
 
+## GitHub Pages арқылы жариялау
+
+Жоба — дайын `dist/` каталогынан жарияланатын статикалық сайт. Орнату немесе құрастыру қадамы жоқ. Жариялау [`.github/workflows/pages.yml`](.github/workflows/pages.yml) арқылы орындалады.
+
+1. Жобаны GitHub репозиторийінің `main` тармағына жүктеңіз.
+2. Репозиторийдің **Settings → Pages → Build and deployment → Source** бөлімінде **GitHub Actions** таңдаңыз.
+3. **Actions → Deploy to GitHub Pages → Run workflow** арқылы алғашқы жариялауды бастаңыз. Одан кейін `main` тармағына әр push сайтты автоматты жаңартады.
+4. Жариялау аяқталғанда нақты сайт сілтемесі workflow-дың `github-pages` ортасында және **Settings → Pages** бөлімінде көрсетіледі.
+
+Workflow тек `dist/` мазмұнын жүктейді: бастапқы кодты алады, Pages-ті баптайды, статикалық артефактты сақтайды және жариялайды. Қажетті құқықтар: `contents: read`, `pages: write`, `id-token: write`. Қосымша токен немесе repository secret қажет емес. Жариялау тапсырмалары `pages` кезегін пайдаланады; басталған жариялау жаңа push келгенде тоқтатылмайды.
+
+CSS, JavaScript, қаріптер және фотоға сілтемелер салыстырмалы. Сондықтан сайт жеке домен түбірінде де, GitHub Pages репозиторий ішкі жолында да жұмыс істеуге дайын. Беттер `#/catalog`, `#/sanatorium/1` сияқты hash маршруттарымен ашылады; оларды қайта жүктеу серверде қосымша маршрут баптауын қажет етпейді. Бұл демо үшін `404.html` қайта бағыттауы қажет емес.
+
+Репозиторий: [kuatakylbek44-ai/saryagash-kurort](https://github.com/kuatakylbek44-ai/saryagash-kurort). Сәтті жариялаудан кейін сайт [GitHub Pages](https://kuatakylbek44-ai.github.io/saryagash-kurort/) мекенжайында ашылады. Жариялау күйін [Actions](https://github.com/kuatakylbek44-ai/saryagash-kurort/actions) бөлімінен тексеріңіз.
+
+Нұсқаулық: [GitHub Pages custom workflows](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages).
+
 ## Құрамы
 
 - Қазақша басты бет, 10 үлгі санаторий, сүзгілер мен сұрыптау.
