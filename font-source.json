@@ -1,0 +1,13 @@
+{
+  "family": "Manrope",
+  "provider": "Google Fonts",
+  "css_source": "https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap",
+  "font_source": "https://fonts.gstatic.com/s/manrope/v23/",
+  "upstream_repository": "https://github.com/google/fonts/tree/main/ofl/manrope",
+  "license": "SIL Open Font License 1.1",
+  "license_file": "dist/assets/fonts/OFL.txt",
+  "stylesheet": "dist/fonts.css",
+  "weight_range": "200–800",
+  "subsets": ["cyrillic-ext", "cyrillic", "greek", "vietnamese", "latin-ext", "latin"],
+  "accessed_on": "2026-11-19"
+}

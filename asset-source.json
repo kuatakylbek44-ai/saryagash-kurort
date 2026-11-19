@@ -1,0 +1,14 @@
+{
+  "asset": "dist/assets/resort.jpg",
+  "description": "Illustrative resort swimming pool photo, reused across all ten demo sanatoriums. This photograph does not depict Saryagash.",
+  "photographer": "Rosemary Media",
+  "photographer_url": "https://unsplash.com/@rosemarymedia",
+  "source": "Unsplash",
+  "source_page": "https://unsplash.com/photos/a-swimming-pool-in-a-resort-6pvIAIoipIU",
+  "download_url": "https://images.unsplash.com/photo-1660839638369-7aff0b6a83d0?auto=format&fit=crop&fm=jpg&q=76&w=2000",
+  "license_name": "Unsplash License",
+  "license_url": "https://unsplash.com/license",
+  "width": 2000,
+  "height": 1333,
+  "accessed_on": "2026-11-19"
+}

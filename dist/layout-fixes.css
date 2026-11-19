@@ -1,0 +1,22 @@
+@media(max-width:800px){
+ .detail-route .assistant-widget{bottom:104px}
+ .detail-route .compare-dock{bottom:105px}
+ .detail-route .detail-page{padding-bottom:125px}
+}
+@media(max-width:600px){
+ .detail-route .assistant-panel{bottom:174px;max-height:calc(100dvh - 194px)}
+ .detail-route .assistant-messages{max-height:calc(100dvh - 460px)}
+ .detail-route .assistant-launch-label{display:none}
+ .assistant-launch-label{max-width:180px}
+}
+@media(max-width:390px){
+ .header-actions{gap:4px}
+ .hero h1{font-size:45px}
+ .card-tags{gap:7px}
+ .compare-property>strong,.compare-grid:has(.compare-hotel:nth-child(3)) .compare-property>strong{font-size:16px}
+ .compare-hotel-title h2,.compare-grid:has(.compare-hotel:nth-child(3)) .compare-hotel-title h2{font-size:16px}
+ .compare-property,.compare-grid:has(.compare-hotel:nth-child(3)) .compare-property{padding-left:9px;padding-right:9px}
+ .booking-fields{grid-template-columns:1fr}
+ .booking-fields label{grid-column:auto!important}
+ .booking-modes{grid-template-columns:1fr}
+}
